@@ -1,7 +1,26 @@
 extends pug/layout/base.pug
 
 block title
-  title Index Page
+  title Сделать галерю изображений
 
 block content
-  h1 Hellow, world!
+  .container
+    h1 Сделать галерю изображений
+
+    .slider#slider
+      .slider__list
+        div.slider__item
+          img.slider__pick(src="img/macos_finder_icloud_large.png")
+        div.slider__item
+          img.slider__pick(src="img/technology_large.jpg")
+        div.slider__item
+          img.slider__pick(src="img/compare_large.png")
+        div.slider__item
+          img.slider__pick(src="img/pro_finalcut_large.png")
+      .slider__controls
+        .slider__nav
+          .slider__left Предыдущий
+          .slider__right Следующий
+        .slider__dots
+
+
